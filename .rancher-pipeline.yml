@@ -4,13 +4,6 @@ stages:
   - runScriptConfig:
       image: harbor.nick.support.rancher.space/nickngch90:latest
       shellScript: npm install
-    envFrom:
-    - sourceName: p-2nssb-dockernicksupportrancherspace
-      sourceKey: username
-      targetKey: username
-    - sourceName: p-2nssb-dockernicksupportrancherspace
-      sourceKey: password
-      targetKey: password
 - name: publish
   steps:
   - publishImageConfig:
