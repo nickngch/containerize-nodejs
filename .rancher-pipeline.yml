@@ -2,8 +2,13 @@ stages:
 - name: install
   steps:
   - runScriptConfig:
-      image: node:latest
+      image: harbor.nick.support.rancher.space/nickngch90/node:latest
       shellScript: npm install
+    envFrom:
+    - sourceName: p-bqqls-harbornicksupportrancherspace
+      sourceKey: username
+      targetKey: username
+    - sourceName: p-bqqls-harbornicksupportrancherspace
 - name: publish
   steps:
   - publishImageConfig:
