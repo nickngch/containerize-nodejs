@@ -4,14 +4,6 @@ stages:
   - runScriptConfig:
       image: node:latest
       shellScript: npm install
-- name: code formatting
-  steps:
-  - runScriptConfig:
-      image: node:latest
-      shellScript: npm run format
-  - runScriptConfig:
-      image: node:latest
-      shellScript: npm run build
 - name: publish
   steps:
   - publishImageConfig:
