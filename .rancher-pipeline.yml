@@ -4,13 +4,6 @@ stages:
   - runScriptConfig:
       image: harbor.nick.support.rancher.space/nickngch90/node:latest
       shellScript: npm install
-    envFrom:
-    - sourceName: harbor1
-      sourceKey: username
-      targetKey: username
-    - sourceName: harbor1
-      sourceKey: password
-      targetKey: password
 - name: publish
   steps:
   - publishImageConfig:
