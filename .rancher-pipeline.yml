@@ -5,10 +5,12 @@ stages:
       image: node:latest
       shellScript: npm install
     envFrom:
-    - sourceName: p-bqqls-harbornicksupportrancherspace
+    - sourceName: p-2nssb-dockernicksupportrancherspace
       sourceKey: username
       targetKey: username
-    - sourceName: p-bqqls-harbornicksupportrancherspace
+    - sourceName: p-2nssb-dockernicksupportrancherspace
+      sourceKey: password
+      targetKey: password
 - name: publish
   steps:
   - publishImageConfig:
