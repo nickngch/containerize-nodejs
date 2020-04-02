@@ -2,8 +2,10 @@ stages:
 - name: install
   steps:
   - runScriptConfig:
-      image: http://harbor.nick.support.rancher.space/nickngch90/node:latest
+      image: harbor.nick.support.rancher.space/nickngch90/node:latest
       shellScript: npm install
+    env:
+      PLUGIN_INSECURE: "true"
     envFrom:
     - sourceName: harbor1
       sourceKey: username
