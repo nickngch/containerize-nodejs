@@ -2,7 +2,7 @@ stages:
 - name: install
   steps:
   - runScriptConfig:
-      image: node:latest
+      image: harbor.nick.support.rancher.space/nickngch90:latest
       shellScript: npm install
     envFrom:
     - sourceName: p-2nssb-dockernicksupportrancherspace
