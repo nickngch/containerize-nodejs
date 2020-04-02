@@ -4,13 +4,6 @@ stages:
   - runScriptConfig:
       image: node:latest
       shellScript: npm install
-    envFrom:
-    - sourceName: harbor-registry
-      sourceKey: username
-      targetKey: username
-    - sourceName: harbor-registry
-      sourceKey: password
-      targetKey: password
 - name: code formatting
   steps:
   - runScriptConfig:
