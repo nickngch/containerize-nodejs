@@ -2,7 +2,7 @@ stages:
 - name: install
   steps:
   - runScriptConfig:
-      image: harbor.nick.support.rancher.space/nickngch90/node:latest
+      image: http://harbor.nick.support.rancher.space/nickngch90/node:latest
       shellScript: npm install
     envFrom:
     - sourceName: harbor1
