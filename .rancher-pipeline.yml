@@ -2,7 +2,7 @@ stages:
 - name: install
   steps:
   - runScriptConfig:
-      image: harbor.nick.support.rancher.space/nickngch90/node:latest
+      image: node:latest
       shellScript: npm install
 - name: publish
   steps:
