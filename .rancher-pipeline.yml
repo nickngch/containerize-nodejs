@@ -12,7 +12,5 @@ stages:
       tag: nickngch90/node-web-app
       pushRemote: true
       registry: docker.nick.support.rancher.space
-    env:
-      PLUGIN_INSECURE: "true"
 timeout: 60
 notification: {}
